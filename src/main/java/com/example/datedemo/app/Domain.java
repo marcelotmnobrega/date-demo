@@ -1,4 +1,4 @@
-package com.example.datedemo;
+package com.example.datedemo.app;
 
 
 import lombok.AllArgsConstructor;
@@ -10,12 +10,12 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Domain2 {
+public class Domain {
 
     private Integer id;
 
     private String name;
 
-//    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSZ", timezone="America/Sao_Paulo")
+//    @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSZ", timezone="UTC")
     private LocalDateTime begin;
 }

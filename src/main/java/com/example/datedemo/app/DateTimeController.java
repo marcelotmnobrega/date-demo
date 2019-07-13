@@ -1,4 +1,4 @@
-package com.example.datedemo;
+package com.example.datedemo.app;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.web.bind.annotation.GetMapping;
