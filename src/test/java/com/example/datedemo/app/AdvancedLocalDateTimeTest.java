@@ -17,66 +17,66 @@ class AdvancedLocalDateTimeTest implements WithAssertions {
 //  str (utc) >> LocalDate (sp)
 //  LocalDate (sp) >> str (utc)
 
-//    @Test
-//    void test01() {
-//        {
-//            System.out.println("---------------");
-//            System.out.println("SAO PAULO");
-//            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE));
-//            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).toLocalDateTime());
-//            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
-//        }
-//
-//        {
-//            System.out.println("---------------");
-//            System.out.println("NEW YORK");
-//            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE));
-//            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).toLocalDateTime());
-//            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
-//        }
-//
-//        {
-//            System.out.println("---------------");
-//            System.out.println("LONDON");
-//            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE));
-//            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).toLocalDateTime());
-//            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
-//        }
-//    }
+    @Test
+    void test01() {
+        {
+            System.out.println("---------------");
+            System.out.println("SAO PAULO");
+            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE));
+            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).toLocalDateTime());
+            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
+        }
 
-//    @Test
-//    void test02() {
-//        DateTimeFormatter formatter = DateTimeFormatter.ISO_INSTANT;
-//        {
-//            System.out.println("---------------");
-//            System.out.println("SAO PAULO");
-//            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE));
-//            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).toLocalDateTime());
-//            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
-//            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).withZoneSameInstant(ZoneId.of("UTC")).toLocalDateTime());
-//            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).withZoneSameInstant(ZoneId.of("UTC")).format(formatter));
-//        }
-//
-//        {
-//            System.out.println("---------------");
-//            System.out.println("NEW YORK");
-//            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE));
-//            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).toLocalDateTime());
-//            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
-//            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).withZoneSameInstant(ZoneId.of("UTC")).toLocalDateTime());
-//            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).withZoneSameInstant(ZoneId.of("UTC")).format(formatter));
-//        }
-//
-//        {
-//            System.out.println("---------------");
-//            System.out.println("LONDON");
-//            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE));
-//            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).toLocalDateTime());
-//            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
-//            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).withZoneSameInstant(ZoneId.of("UTC")).toLocalDateTime());
-//            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).withZoneSameInstant(ZoneId.of("UTC")).format(formatter));
-//        }
-//    }
+        {
+            System.out.println("---------------");
+            System.out.println("NEW YORK");
+            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE));
+            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).toLocalDateTime());
+            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
+        }
+
+        {
+            System.out.println("---------------");
+            System.out.println("LONDON");
+            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE));
+            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).toLocalDateTime());
+            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
+        }
+    }
+
+    @Test
+    void test02() {
+        DateTimeFormatter formatter = DateTimeFormatter.ISO_INSTANT;
+        {
+            System.out.println("---------------");
+            System.out.println("SAO PAULO");
+            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE));
+            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).toLocalDateTime());
+            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
+            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).withZoneSameInstant(ZoneId.of("UTC")).toLocalDateTime());
+            System.out.println(LocalDate.now().atStartOfDay(SP_ZONE).withZoneSameInstant(ZoneId.of("UTC")).format(formatter));
+        }
+
+        {
+            System.out.println("---------------");
+            System.out.println("NEW YORK");
+            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE));
+            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).toLocalDateTime());
+            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
+            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).withZoneSameInstant(ZoneId.of("UTC")).toLocalDateTime());
+            System.out.println(LocalDate.now().atStartOfDay(NY_ZONE).withZoneSameInstant(ZoneId.of("UTC")).format(formatter));
+        }
+
+        {
+            System.out.println("---------------");
+            System.out.println("LONDON");
+            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE));
+            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).toLocalDateTime());
+            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).withZoneSameInstant(ZoneId.of("UTC")));
+            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).withZoneSameInstant(ZoneId.of("UTC")).toLocalDateTime());
+            System.out.println(LocalDate.now().atStartOfDay(LONDON_ZONE).withZoneSameInstant(ZoneId.of("UTC")).format(formatter));
+        }
+    }
 
     @Test
     void testUtcStrToSaoPauloLocalDateTime() {
@@ -102,6 +102,24 @@ class AdvancedLocalDateTimeTest implements WithAssertions {
 
     @Test
     void testUtcStrToSaoPauloDLSLocalDateTime() {
+        {
+            System.out.println("--------------- testUtcStrToSaoPauloDLSLocalDateTime()");
+            String utcStr = "2018-12-13T12:13:00Z";
+            ZonedDateTime zdt = Instant.parse(utcStr).atZone(SP_ZONE);
+            LocalDateTime ldt = zdt.toLocalDateTime();
+            System.out.println(zdt);
+            System.out.println(ldt);
+            System.out.println(ldt.truncatedTo(ChronoUnit.MILLIS));
+        }
+        {
+            System.out.println("--------------- testUtcStrToSaoPauloDLSLocalDateTime()");
+            String utcStr = "2018-12-13T12:13:14Z";
+            ZonedDateTime zdt = Instant.parse(utcStr).atZone(SP_ZONE);
+            LocalDateTime ldt = zdt.toLocalDateTime();
+            System.out.println(zdt);
+            System.out.println(ldt);
+            System.out.println(ldt.truncatedTo(ChronoUnit.MILLIS));
+        }
         {
             System.out.println("--------------- testUtcStrToSaoPauloDLSLocalDateTime()");
             String utcStr = "2018-12-13T12:13:14.12Z";
